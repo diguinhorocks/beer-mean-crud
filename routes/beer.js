@@ -4,8 +4,6 @@
 
 var mongoose = require('mongoose')
   , Schema = mongoose.Schema;
-mongoose.connect('mongodb://localhost/mybeersio');
-var db = mongoose.connection;
 
 var BeerSchema = new Schema({
   name: { type: String, default: '' },
